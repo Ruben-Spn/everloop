@@ -2,10 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Gradient } from "./components/gradient";
 
 export default function Home() {
   return (
-    <div className="text-white bg-black font-poppins w-full min-h-screen flex flex-col items-center justify-start animated-gradient">
+    <div className="text-white bg-black font-poppins w-full min-h-screen flex flex-col items-center justify-start relative">
+      <div className="absolute h-full w-full top-0 left-0">
+        <Gradient />
+      </div>
       <div className="h-screen w-full flex flex-col z-10">
         <div className="w-full px-40 py-12">
           <nav className="w-full drop-shadow-nav bg-mauve-100/[.15] p-4 rounded-full flex items-center justify-between text-sm">
